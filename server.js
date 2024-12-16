@@ -67,7 +67,7 @@ app.post("/", (req, res) => {
   const { userId, userPassword } = req.body;
   // 3️⃣. (find 메서드를 사용하여) users의 정보와 사용자가 입력한 정보를 비교하여 일치하는 회원이 존재하는지 확인하는 로직을 작성하세요.
   const userInfo = users.find(
-    (el) => el.user_id === userId && el.user_pasword === userPassword
+    (el) => el.user_id === userId && el.user_password === userPassword
   );
 
   if (!userInfo) {
